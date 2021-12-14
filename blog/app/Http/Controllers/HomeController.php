@@ -9,7 +9,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-
         $users = DB::table("users")->get();
         return $users;
         return view('user.idex' , ["users" => $users]);
